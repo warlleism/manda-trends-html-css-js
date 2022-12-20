@@ -108,11 +108,11 @@
 
 .content>.text-container {
     left: 40px;
-    text-align: start;
     width: 330px;
     bottom: 30px;
     color: #fff;
     font-size: 2rem;
+    text-align: start;
     position: absolute;
 }
 
@@ -185,7 +185,7 @@ strong {
     transition: .5s ease-in-out;
 }
 
-.combo-content>.card-content>.categoria {
+.combo-content>.card-content>.container-card-text>.categoria {
     margin: 10px 0;
     font-size: 1rem;
     color: rgb(39, 39, 39);
@@ -217,7 +217,7 @@ strong {
     border-radius: 10px;
 }
 
-.container-content>.combo-content>.card-content>.texto-combo {
+.container-content>.combo-content>.card-content>.container-card-text>.texto-combo {
     width: 100%;
     font-weight: 600;
     font-size: 1.3rem;
@@ -298,6 +298,7 @@ p>a {
 .trends {
     top: 70px;
     opacity: 0;
+    z-index: 2;
     right: 30px;
     width: 300px;
     color: #fff;
@@ -349,6 +350,24 @@ p>a {
         margin-bottom: 30px;
     }
 
+    .combo-content>.card-content>img {
+        width: 300px;
+    }
+
+    .combo-content>.card-content>.container-card-text {
+        margin-left: 20px;
+    }
+
+    .container-content>.combo-content>.card-content>.container-card-text>.texto-combo {
+        font-size: 1.6rem;
+        margin-left: 20px;
+    }
+
+    .container-content>.combo-content>.card-content>.container-card-text>.categoria {
+        font-size: 1.1rem;
+        margin-left: 20px;
+    }
+
     .combo-content>.card-content>.ver-card {
         display: none;
     }
@@ -357,11 +376,6 @@ p>a {
         display: none;
     }
 
-
-    .container-content>.combo-content>.card-content>.texto-combo {
-        font-size: 1.6rem;
-        margin-left: 20px;
-    }
 
 }
 
@@ -373,10 +387,6 @@ p>a {
 
     .combo-content {
         width: 80%;
-    }
-
-    .combo-content>.card-content>img {
-        width: 380px;
     }
 
 }
@@ -402,5 +412,90 @@ p>a {
     .container-content>.content {
         height: 400px;
     }
+
+}
+
+@media screen and (max-width: 412px) {
+
+    .container-content {
+        margin: 0;
+        width: 100vw;
+    }
+
+    .container-content>.content {
+        width: 90%;
+    }
+
+    .content>.text-container {
+        left: 0px;
+        width: 100%;
+        bottom: 30px;
+        text-align: center;
+    }
+
+    .content>.text-container-rigth {
+        left: 0px;
+        width: 100%;
+        bottom: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 578px) {
+
+    .footer {
+        display: none;
+    }
+
+    .header {
+        width: 100vw;
+    }
+
+    .header>.container-name {
+        max-width: 300px;
+    }
+
+    .direitos-autorais {
+        width: 100vw;
+    }
+
+    .direitos-autorais>p {
+        width: 90%;
+    }
+
+    .container-content>.content {
+        height: 300px;
+    }
+
+    .container-content>.whatsapp>.logo-whats {
+        max-width: 300px !important;
+        height: 300px !important;
+    }
+
+    .container-content>.content>img {
+        filter: brightness(70%);
+    }
+
+    .combo-content {
+        margin-bottom: 0;
+    }
+
+    .combo-content>.card-content {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .combo-content>.card-content>img {
+        width: 100%;
+    }
+
+    .combo-content>.card-content>.container-card-text {
+        margin: 0;
+    }
+
+    .combo-content>.card-content>.container-card-text>.texto-combo {
+        margin: 0 !important;
+    }
+
 
 }
