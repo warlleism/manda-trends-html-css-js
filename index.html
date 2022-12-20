@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container-name">
+            <img src="./imagens/logo.png" alt="">
+        </div>
+    </div>
+
+    <div class="container-content">
+
+        <div class="content">
+            <div class="ver">Ver <span class="material-symbols-outlined">
+                    arrow_forward
+                </span></div>
+            <img src="./imagens/nrf.jpg" alt="">
+            <div class="circle-container">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="text text-container">
+                <strong style="color: #e84742;">40.000 </strong> profissionais se reunirão para a NRF 2020 Vision
+                <strong style="color: #e84742;">Retail's Big Show.</strong>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="ver">Ver <span class="material-symbols-outlined">
+                    arrow_forward
+                </span></div>
+            <img src="./imagens/nfr.png" class="kobe" alt="">
+            <div class="circle-container" style="left: 40px;">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="text text-container-rigth">
+                <strong style="color: #00a6f5;">NRF 2020: </strong>conheça os top 5 assuntos do <strong
+                    style="color: #00a6f5;">evento</strong>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="ver">Ver <span class="material-symbols-outlined">
+                    arrow_forward
+                </span></div>
+            <img src="./imagens/kobe.png" class="kobe" alt="">
+            <div class="circle-container">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="hashtag-container">
+                <strong style="color: #ffff00;">#</strong>MAKEKOBETHELOGO
+            </div>
+            <div class="text-container">
+                <strong style="color: #ffff00;">Petição</strong> para colocar
+                kobe Bryant no logo da <strong style="color: #ffff00;">NBA</strong>
+            </div>
+        </div>
+
+        <div class="combo-content">
+            <div class="card-content">
+                <div class="ver-card">Ver <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span></div>
+                <img src="./imagens/akon.png" class="kobe" alt="">
+                <div class="categoria">Inovação & Insight</div>
+                <div class="texto-combo">Akon City: Wakanda da vida real</div>
+            </div>
+            <div class="card-content">
+                <div class="ver-card">Ver <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span></div>
+                <img src="./imagens/wakanda.png" class="kobe" alt="">
+                <div class="categoria">Hot News</div>
+                <div class="texto-combo">Pantera Negra: o que significa Wakanda Para Sempre?</div>
+            </div>
+            <div class="card-content">
+                <div class="ver-card">Ver <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span></div>
+                <img src="./imagens/exposicao.png" class="kobe" alt="">
+                <div class="categoria">Comportamento</div>
+                <div class="texto-combo">Exposições afrofuturistas: a arte preta em pauta</div>
+            </div>
+        </div>
+
+        <div class="content whatsapp">
+            <div class="ver">Ver <span class="material-symbols-outlined">
+                    arrow_forward
+                </span></div>
+            <img src="./imagens/whatsapp-png.png" class="logo-whats" style="max-width: 400px; height: 400px;">
+            <div class="circle-container" style="left: 40px;">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="text text-container-rigth">
+                <strong style="color: #08FF5C;">Whatsapp </strong>terá função de pagamentos em <strong
+                    style="color: #08FF5C;">2020</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="./imagens/logo-mandarin.png" alt="">
+        <div class="line"></div>
+        <img src="./imagens/logo-shopper.png" alt="">
+    </div>
+
+    <div class="direitos-autorais">
+        <p>
+            Copyright ® Mandarin. Todos os direitos reservador.
+            Caso não deseje mais receber nossos e-mails, por favor <a href="#">clique aqui.</a>
+        </p>
+    </div>
+
+    <div class="trends" id="trends">
+        <span class="material-symbols-outlined icon" onclick="hiddenMsg()">
+            close
+        </span>
+        <div>
+            Deseja receber mais trends por e-mail? <a href="#" style="color: #fff;">clique aqui.</a> e cadastre-se.
+        </div>
+    </div>
+
+    <div class="icon-arrow-up" onclick="ScrollUp()" id="arrowTop">
+        <span class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </div>
+
+</body>
+
+<script>
+
+    const menssage = document.getElementById('trends')
+    const arrowTop = document.getElementById('arrowTop')
+
+    function ScrollUp() {
+        window.scrollTo(0, 0)
+    }
+
+    function hiddenMsg() {
+        menssage.style.display = 'none'
+    }
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 200) {
+            menssage.style.opacity = 1
+            arrowTop.style.display = 'block'
+        }
+
+        if (window.scrollY <= 200) {
+            arrowTop.style.display = 'none'
+        }
+
+    })
+</script>
+
+
+</html>
